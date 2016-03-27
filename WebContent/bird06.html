@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<title>黑脸琵鹭</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href='http://fonts.useso.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<!-- start slider -->
+		<link href="css/camera.css" rel="stylesheet" type="text/css" media="all" />
+		<script src="js/jquery.min.js"></script>
+		<script type='text/javascript' src="js/jquery.mobile.customized.min.js"></script>
+		<script type='text/javascript' src="js/jquery.easing.1.3.js"></script>
+		<script type='text/javascript' src="js/camera.min.js"></script>
+		<script>
+			jQuery(function() {
+				jQuery('#camera_wrap_2').camera({
+					loader: 'bar',
+					pagination: false,
+					thumbnails: false
+				});
+			});
+		</script>
+		<!-- end slider -->
+		<!-- start gallery -->
+		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				var filterList = {
+					init: function() {
+						// MixItUp plugin
+						// http://mixitup.io
+						$('#portfoliolist').mixitup({
+							targetSelector: '.portfolio',
+							filterSelector: '.filter',
+							effects: ['fade'],
+							easing: 'snap',
+							// call the hover effect
+							onMixEnd: filterList.hoverEffect()
+						});
+					},
+					hoverEffect: function() {
+						// Simple parallax effect
+						$('#portfoliolist .portfolio').hover(
+							function() {
+								$(this).find('.label').stop().animate({
+									bottom: 0
+								}, 200, 'easeOutQuad');
+								$(this).find('img').stop().animate({
+									top: 0
+								}, 500, 'easeOutQuad');
+							},
+							function() {
+								$(this).find('.label').stop().animate({
+									bottom: -40
+								}, 200, 'easeInQuad');
+								$(this).find('img').stop().animate({
+									top: 0
+								}, 300, 'easeOutQuad');
+							}
+						);
+					}
+				};
+				// Run the show!
+				filterList.init();
+			});
+		</script>
+		<!-- Add fancyBox main JS and CSS files -->
+		<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+		<script>
+			$(document).ready(function() {
+				$('.popup-with-zoom-anim').magnificPopup({
+					type: 'inline',
+					fixedContentPos: false,
+					fixedBgPos: true,
+					overflowY: 'auto',
+					closeBtnInside: true,
+					preloader: false,
+					midClick: true,
+					removalDelay: 300,
+					mainClass: 'my-mfp-zoom-in'
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<!--star wrap-->
+		<div class="wrap">
+			<!--header-->
+			<div class="header">
+				<!--start-logo-->
+				<div class="logo">
+					<a href="index.html"><h1>守护湿地●<span>留住候鸟</span></h1></a>
+				</div>
+				<!--end-logo-->
+				<!--start-menu-->
+				<div class="menu">
+					<a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+					<ul class="nav">
+						<li><a href="index.html">首页</a></li>
+						<li><a href="hnqx.html">候鸟迁徙</a></li>
+						<li class="active"><a href="bird01.html">候鸟分析</a></li>
+						<li><a href="hnyusd.html">候鸟与湿地</a></li>	
+						<li><a href="contact.html">contact us</a></li>
+						<div class="clear"> </div>
+					</ul>
+					<script type="text/javascript" src="js/responsive-nav.js"></script>
+				</div>
+				<!--end-menu-->
+				<div class="clear"> </div>
+			</div>
+		</div>
+		<!--end-header-->
+		<!--end wrap-->
+		<!--top- heading-->
+		<div clasS="top-heading">
+			<!--start-wrap-->
+			<div class="wrap">
+				<h1>黑脸琵鹭</h1>
+			</div>
+			<!--end wrap-->
+		</div>
+		<!--start portfolio-->
+		<div class="wrap">
+			<div class="portofolio-item">
+				<div class="banner img_06" >
+					<img src="img/6.png" alt="" />
+				</div>
+				<div class="img-info">
+					<p>国家林业局中国重点陆生野生动物资源调查结果为：繁殖和越冬种群为9只和120只。
+20世纪90年代初台湾曾文河口有250只，香港米蒲70只，盐城13只，福田保护区48只，海南东寨港13只。
+1999年大连发现9只[2]，2003年和2004年调查海南沿海湿地种群数量为62只。
+台湾是最大的越冬地，1998年调查结果台湾岛的越冬种群达340只，香港为103只。
+1999-2000年，深圳湾越冬地的黑脸琵鹭数量为178只。
+2004-2007年，广东海丰自然保护区越冬种群为27-72只，逐年增加。
+2003-2006年，福建黑脸琵鹭的调查结果显示，在福建越冬的种群约为60-90只。
+2005 年，海南岛黑脸琵鹭的越冬种群数量已达77只。
+2007年，在辽宁越冬的种群为20只左右。
+2007-2009年调查显示，澳门越冬地的种群数量超过50只。
+调查显示2004年以来在中国大陆越冬的个体数量及越冬地的数目都明显增加。</p>
+				<p>
+				香港《明报》报道，香港观鸟会公布被列为“濒危”级别的黑脸琵鹭全球普查最新结果，显示全球整体数量达3356只，较2015年的3272只升2.6%，创下历史新高。但于香港越冬的黑脸琵鹭却有下跌趋势，今年录得371只，较去年411只减少9.7%。
+黑脸琵鹭作为南沙湿地最珍贵的“客人”，26只黑脸琵鹭可能是有共同的祖先。胡慧建博士告诉广州日报记者，发现黑脸琵鹭最早年份是在2005~2006年，当时仅两只；然后在2007年，发现4只；到了2008~2009年，发现了8只……黑脸琵鹭喜欢家族式群体迁徙，今年发现的20多只黑脸琵鹭可能是最早那2只的后代。
+				</p>
+</div>
+				<div class="clear"> </div>
+			</div>
+		</div>
+
+		<div class="copy-right ">
+			<div class="wrap">
+				<div class="copy-right-left">
+				<p>Copyright &copy; 2016 广东外语外贸大学新闻与传播学院与思科信息学院·想做表却做不好队</p>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

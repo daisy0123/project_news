@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>首页</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<link href='http://fonts.useso.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<!-- jQuery -->
+		<!--start slider-->
+		<link href="css/camera.css" rel="stylesheet" type="text/css" media="all" />
+		<script src="js/jquery.min.js"></script>
+		<script type='text/javascript' src="js/jquery.mobile.customized.min.js"></script>
+		<script type='text/javascript' src="js/jquery.easing.1.3.js"></script>
+		<script type='text/javascript' src="js/camera.min.js"></script>
+		<script>
+			jQuery(function() {
+				jQuery('#camera_wrap_2').camera({
+					loader: 'bar',
+					pagination: false,
+					thumbnails: true
+				});
+			});
+		</script>
+		<!--end slider-->
+		<!--start gallery-->
+		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				var filterList = {
+					init: function() {
+						// MixItUp plugin
+						// http://mixitup.io
+						$('#gallerylist').mixitup({
+							targetSelector: '.portfolio',
+							filterSelector: '.filter',
+							effects: ['fade'],
+							easing: 'snap',
+							// call the hover effect
+							onMixEnd: filterList.hoverEffect()
+						});
+					},
+					hoverEffect: function() {
+						// Simple parallax effect
+						$('#gallerylist .portfolio').hover(
+							function() {
+								$(this).find('.label').stop().animate({
+									bottom: 0
+								}, 200, 'easeOutQuad');
+								$(this).find('img').stop().animate({
+									top: -30
+								}, 500, 'easeOutQuad');
+							},
+							function() {
+								$(this).find('.label').stop().animate({
+									bottom: -40
+								}, 200, 'easeInQuad');
+								$(this).find('img').stop().animate({
+									top: 0
+								}, 300, 'easeOutQuad');
+							}
+						);
+					}
+				};
+				// Run the show!
+				filterList.init();
+			});
+		</script>
+		<!--Add fancyBox main JS and CSS files-->
+		<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+		<script>
+			$(document).ready(function() {
+				$('.popup-with-zoom-anim').magnificPopup({
+					type: 'inline',
+					fixedContentPos: false,
+					fixedBgPos: true,
+					overflowY: 'auto',
+					closeBtnInside: true,
+					preloader: false,
+					midClick: true,
+					removalDelay: 300,
+					mainClass: 'my-mfp-zoom-in'
+				});
+			});
+		</script>
+
+	</head>
+
+	<body>
+		<!--star-wrap-->
+		<div class="wrap">
+			<!--header-->
+			<div class="header">
+				<!--start-logo-->
+				<div class="logo">
+					<a href="index.html"><h1>守护湿地●<span>留住候鸟</span></h1></a>
+				</div>
+				<!--end-logo-->
+				<!--start-menu-->
+				<div class="menu">
+					<a class="toggleMenu" href="#"><img src="images/nav.png" alt=" " /></a>
+					<ul class="nav">
+						<li class="active"><a href="index.html">首页</a></li>
+						<li><a href="hnqx.html">候鸟迁徙</a></li>
+						<li><a href="bird.html">濒危候鸟</a></li>
+						<li><a href="hnyusd.html">候鸟与湿地</a></li>
+
+						<li><a href="contact.html">关于我们</a></li>
+						<div class="clear"> </div>
+					</ul>
+					<script type="text/javascript" src="js/responsive-nav.js"></script>
+				</div>
+				<div class="clear"> </div>
+				<!--end-menu-->
+
+			</div>
+		</div>
+		<!--end-header-->
+		<!--end wrap-->
+
+		<!-- start slider -->
+		<div class="main-con">
+			<div class="slider">
+				<div class="color"> <span> </span></div>
+				<div class="wrap">
+					<div class="fluid_container">
+						<div class="camera_wrap camera_magenta_skin" id="camera_wrap_2">
+							<div data-thumb="img/04.PNG" data-src="img/04.jpg">
+								<div class="camera_caption fadeFromBottom">
+									<p>湿地是“地球之肾”，与海洋、森林并称为地球三大生态系统。湿地是位于陆生生态系统和水生生态系统之间的过渡性地带，在土壤浸泡在水中的特定环境下，生长着很多湿地的特征植物。湿地广泛分布于世界各地，拥有众多野生动植物资源，是重要的生态系统。很多珍稀水禽的繁殖和迁徙离不开湿地，因此湿地被称为“鸟类的乐园”。</p>
+								</div>
+							</div>
+							<div data-thumb="img/01.png" data-src="img/01.jpg">
+								<div class="camera_caption fadeFromBottom">
+									<p>湿地是“地球之肾”，与海洋、森林并称为地球三大生态系统。湿地是位于陆生生态系统和水生生态系统之间的过渡性地带，在土壤浸泡在水中的特定环境下，生长着很多湿地的特征植物。湿地广泛分布于世界各地，拥有众多野生动植物资源，是重要的生态系统。很多珍稀水禽的繁殖和迁徙离不开湿地，因此湿地被称为“鸟类的乐园”。</p>
+								</div>
+							</div>
+							<div data-thumb="img/02.png" data-src="img/02.jpg">
+								<div class="camera_caption fadeFromBottom">
+									<p>湿地是“地球之肾”，与海洋、森林并称为地球三大生态系统。湿地是位于陆生生态系统和水生生态系统之间的过渡性地带，在土壤浸泡在水中的特定环境下，生长着很多湿地的特征植物。湿地广泛分布于世界各地，拥有众多野生动植物资源，是重要的生态系统。很多珍稀水禽的繁殖和迁徙离不开湿地，因此湿地被称为“鸟类的乐园”。</p>
+								</div>
+							</div>
+							<div data-thumb="img/03.png" data-src="img/03.jpg">
+								<div class="camera_caption fadeFromBottom">
+									<p>湿地是“地球之肾”，与海洋、森林并称为地球三大生态系统。湿地是位于陆生生态系统和水生生态系统之间的过渡性地带，在土壤浸泡在水中的特定环境下，生长着很多湿地的特征植物。湿地广泛分布于世界各地，拥有众多野生动植物资源，是重要的生态系统。很多珍稀水禽的繁殖和迁徙离不开湿地，因此湿地被称为“鸟类的乐园”。</p>
+								</div>
+							</div>
+							<div data-thumb="img/05.png" data-src="img/05.jpg">
+								<div class="camera_caption fadeFromBottom">
+									<p>湿地是“地球之肾”，与海洋、森林并称为地球三大生态系统。湿地是位于陆生生态系统和水生生态系统之间的过渡性地带，在土壤浸泡在水中的特定环境下，生长着很多湿地的特征植物。湿地广泛分布于世界各地，拥有众多野生动植物资源，是重要的生态系统。很多珍稀水禽的繁殖和迁徙离不开湿地，因此湿地被称为“鸟类的乐园”。</p>
+								</div>
+							</div>
+							<div data-thumb="img/06.png" data-src="img/06.jpg">
+								<div class="camera_caption fadeFromBottom">
+									<p>湿地是“地球之肾”，与海洋、森林并称为地球三大生态系统。湿地是位于陆生生态系统和水生生态系统之间的过渡性地带，在土壤浸泡在水中的特定环境下，生长着很多湿地的特征植物。湿地广泛分布于世界各地，拥有众多野生动植物资源，是重要的生态系统。很多珍稀水禽的繁殖和迁徙离不开湿地，因此湿地被称为“鸟类的乐园”。</p>
+								</div>
+							</div>
+
+						</div>
+						<!-- #camera_wrap_2 -->
+					</div>
+					<!-- .fluid_container -->
+					<div class="clear"></div>
+				</div>
+			</div>
+			<!--end slider-->
+			<!--start home-page-con-->
+
+			<div class="home-page-con">
+				<div class="wrap">
+					<div class="top-grids">
+						<div class="top-grid">
+							<div class="top-grid-info">
+
+								<h2>候鸟都去哪儿？</h2>
+								<div class="clear"> </div>
+							</div>
+							<p>鸟类的迁徙通常是一年两次，即春季由越冬地迁往营巢地，秋季由营巢地迁往越冬地。鸟类的迁徙往往遵循不同的迁徙路线进行，迁徙的距离有远有近，从几公里到几万公里。湿地是候鸟迁徙过程中的中转站，是候鸟一年两次迁徙的关键点。 </p>
+							<a class="btn" href="hnqx.html">More</a>
+						</div>
+						<div class="top-grid">
+							<div class="top-grid-info top_p">
+
+								<h2>这些鸟儿即将消失，只是我们不知道！</h2>
+								<div class="clear"> </div>
+							</div>
+							<p class="top_pp">中国现有鸟类1329中，其中濒危鸟类138种，占我国鸟类种数13.8%。有许多以前常见的鸟类现在销声匿迹，有许多鸟类正在慢慢淡出我们的视线，只是我们不知道。我们罗列出以下六种濒危鸟类，时刻提醒自己这些可爱的朋友正在慢慢离开我们！ </p>
+							<a class="btn" href="bird.html">More</a>
+						</div>
+						<div class="top-grid">
+							<div class="top-grid-info">
+
+								<h2>守住湿地，留住候鸟</h2>
+								<div class="clear"> </div>
+							</div>
+							<p>2016年世界湿地日主题：湿地关乎我们的未来：可持续的生计。曾经我们有大片的湿地，那里是生物的乐园，现在湿地越来越少，鸟儿可去的地方越来越少，整个生态环境面临巨大的挑战。如何守住湿地是我们必须要面临的问题，只有守住了湿地才能守住我们的未来！</p>
+							<a class="btn" href="hnyusd.html">More</a>
+						</div>
+						<div class="clear"> </div>
+					</div>
+
+					<!--end home-page-con-->
+
+					<div class="copy-right">
+						<div class="wrap">
+							<div class="copy-right-left">
+								<p>Copyright &copy; 2016 广东外语外贸大学新闻与传播学院与思科信息学院·想做表却做不好队</p>
+							</div>
+						</div>
+					</div>
+				</div>
+	</body>
+
+</html>
